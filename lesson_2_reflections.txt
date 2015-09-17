@@ -1,0 +1,7 @@
+What happens when you initialize a repository? Why do you need to do it?
+
+A .git file is created in the directory in which I initialize a git repository. This .git files stores the meta-data on the history and changes of the documents in the repository. NO commit is created.
+
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+
+The staging area does not necessarily hold all files from the working directory. It hold the files I want to put toghether in one commit. The repository again contains all files from all commits. So all three can contain different files. The value of the staging area is to divde my commits into logical parts.
