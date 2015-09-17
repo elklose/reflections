@@ -1,0 +1,8 @@
+GIT
+diff -u filenameA filenameB  --> difference between two files
+git log --stat
+git diff [ID] [ID]
+git --version
+
+repository -> a collection of files
+clone a repository (with its entire history!) -> not only download files
