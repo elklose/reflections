@@ -1,4 +1,6 @@
 GIT commands
+---------------------------------------
+
 diff -u filenameA filenameB  --> difference between two files
 git log --stat
 git diff [ID] [ID]  --> Sortierung = das neueste zuerst!
@@ -7,8 +9,10 @@ git diff --> no argument! --> differences between working directory and staging 
 git diff --staged --> differences between latest commit in the repository and the staging area.
 					  => e.g. to double check if the changes shown here are really the changes I want to commit.
 git --version
-git clone [URL] --> clone a repository (with its entire history and thus not only download files)
-git checkout --> restore a previous version of the repository (to "checkout" whether a certain bug was there already)
+git clone [URL] --> clone a repository (with its entire history and thus not only 
+	download files)
+git checkout --> restore a previous version of the repository (to "checkout" 
+	whether a certain bug was there already)
 git init --> creates new repository
 git status --> shows which files have changed since the last commit
 git commit --> make a commit and open sublime to enter a commit message
@@ -16,10 +20,25 @@ git commit -m "Commit message"
 git reset --hard --> removes changes I made that are not in the staging area
 			!! use with care!!!
 git branch --> shows the existing branches in the repository, the one with the star 	is currently checked-out
-git branch argument --> creates a new branch with the name of the argument
-git checkout -b new_branch_name -> makes a new branch and checksout the new branches
+git branch [argument] --> creates a new branch with the name of the argument
+git checkout -b [new_branch_name] -> makes a new branch and checksout the new branches
 	with the currently (possibly unreachable) changes
 	=> git branch new_branch_name + git checkout new_branch_name;
+git merge [branch1] [branch2] --> merges branch2 into branch1; branch 1 should be
+	checked-out
+	! if a conflict occurs, I can try and resolve it. open the file in which the conflict occurred and the file will contain all three versions: the original one, and both with the conflicting changes coded with <<<<<<<<<<< or ||||||||| and HEAD or master
+git show [ID] --> shows the differences between a commit and its parent 
+			=> may be usefull after merging, then git diff ID ID will not be very usefull
+git log --graph
+git remote --> similar to git branch: show remote commits
+git remote -v --> verbose = more detailed information on my remote(s)
+git remote add [name; standard: origin] [URL] --> add a remote repository, give 
+	it a name and supply the URL to add it to
+git push [remote I want to push to] [local branch to push]
+git pull [remote repository to pull from] [branch of remote repository to pull]
+
+
+
 
 
 repository -> a collection of files
