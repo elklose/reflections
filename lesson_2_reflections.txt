@@ -19,3 +19,9 @@ To see the exact order of commits and parents, i.e. reachability.
 
 What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
 The result is a file containing all commited changes - deletions and additions. The log of commits contains all commits in the order of the time stamps.
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+Pro automatic: it saves a lot of work.
+Contra: If something really goes wrong, the merge leads to an undetected conflict. Maybe two people made changes concerning the same thing but in such a different manner that git doesn't realize and takes both changes into account.
+Pro manual: You can always be sure, the changes don't conflict.
+Contra manual: Obviously a lot of work.
