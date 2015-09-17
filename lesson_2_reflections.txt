@@ -16,3 +16,6 @@ If I try out a new feature, another possible version, a translation and want to 
 
 How do the diagrams help you visualize the branch structure?
 To see the exact order of commits and parents, i.e. reachability.
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+The result is a file containing all commited changes - deletions and additions. The log of commits contains all commits in the order of the time stamps.
