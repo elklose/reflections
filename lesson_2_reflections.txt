@@ -5,3 +5,11 @@ A .git file is created in the directory in which I initialize a git repository. 
 How is the staging area different from the working directory and the repository? What value do you think it offers?
 
 The staging area does not necessarily hold all files from the working directory. It hold the files I want to put toghether in one commit. The repository again contains all files from all commits. So all three can contain different files. The value of the staging area is to divde my commits into logical parts.
+
+How can you use the staging area to make sure you have one commit per logical change?
+
+I can make all changes necessary for one logical change and add the respective files with changes in the staging area. If may be that I already made more changes but don't commit everything at once to have the LOGICAL changes.
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+If I try out a new feature, another possible version, a translation and want to keep the original version. Changes are then only made to one branch while the other branch is kept the same.
