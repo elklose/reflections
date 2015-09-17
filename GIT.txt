@@ -1,0 +1,23 @@
+GIT commands
+diff -u filenameA filenameB  --> difference between two files
+git log --stat
+git diff [ID] [ID]  --> Sortierung = das neueste zuerst!
+git diff --> no argument! --> differences between working directory and staging area. 
+							=> changes I have made and that are not yet in the staging area.
+git diff --staged --> differences between latest commit in the repository and the staging area.
+					  => e.g. to double check if the changes shown here are really the changes I want to commit.
+git --version
+git clone [URL] --> clone a repository (with its entire history and thus not only download files)
+git checkout --> restore a previous version of the repository (to "checkout" whether a certain bug was there already)
+git init --> creates neww depository
+git status --> shows which files have changed since the last commit
+git commit --> make a commit and open sublime to enter a commit message
+git commit -m "Commit message"
+git reset --hard --> removes changes I made that are not in the staging area
+			!! use with care!!!
+
+
+
+repository -> a collection of files
+
+ shows which files have changed since the last commit
