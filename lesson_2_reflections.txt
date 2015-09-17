@@ -13,3 +13,6 @@ I can make all changes necessary for one logical change and add the respective f
 What are some situations when branches would be helpful in keeping your history organized? How would branches help?
 
 If I try out a new feature, another possible version, a translation and want to keep the original version. Changes are then only made to one branch while the other branch is kept the same.
+
+How do the diagrams help you visualize the branch structure?
+To see the exact order of commits and parents, i.e. reachability.
